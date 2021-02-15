@@ -1,0 +1,78 @@
+/* *********************** */
+/* this is the title styling */
+/* *********************** */
+
+
+.mainheading{
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 10%;
+    text-align: left;
+    font: normal normal bold 50px/71px Microsoft PhagsPa;
+    color: #2B0565;
+}
+
+
+/* *********************** */
+
+/* it ends here */
+
+/* *********************** */
+
+/* *********************** */
+
+/* *********************** */
+
+/* *********************** */
+
+/* *********************** */
+
+/* this is the nav styling */
+
+/* *********************** */
+
+nav{
+    
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);  
+    bottom: 10px;
+    width: 320px;
+    height: 60px;
+    background-color: #2b0565;
+    border-radius: 50px; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav a{
+    position: relative;
+    display: flex;
+    transform: translatey(50%);  
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    outline: none;
+    color: #ffffff;
+    margin-left: 10px;
+}
+nav a i{
+
+}
+
+
+/* *********************** */
+
+/* it ends here */
+
+/* ************************ */
+
+
+.hotel{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 100px;
+}
