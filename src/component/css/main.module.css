@@ -32,12 +32,12 @@
 
 /* *********************** */
 
-nav{
+.nav{
     
     position: fixed;
     left: 50%;
     transform: translateX(-50%);  
-    bottom: 10px;
+    bottom: 20px;
     width: 320px;
     height: 60px;
     background-color: #2b0565;
@@ -46,10 +46,9 @@ nav{
     justify-content: space-around;
     align-items: center;
 }
-nav a{
+.nav a{
     position: relative;
-    display: flex;
-    transform: translatey(50%);  
+    display: flex; 
     height: 100%;
     align-items: center;
     justify-content: center;

@@ -1,7 +1,7 @@
 import React from 'react'
 import style from './css/main.module.css'
-import {Link} from "react-router-dom";
-import HomeCard from './HomeCard'
+import HomeCard from './mini/HomeCard'
+import Nav from "./mini/Nav";
 
 
 
@@ -23,15 +23,7 @@ const Home = () => {
             </div>
                 
 
-            {/* this is the nav */}
-            <nav className={style.nav}>
-            
-                <Link to='/home'><i className="gg-home"></i></Link>
-                <Link to="/add"><i className="gg-add"></i></Link>
-                <Link to="/search"><i className="gg-search"></i></Link>
-            
-            </nav>
-
+            <Nav/>
 
         </div>
     )

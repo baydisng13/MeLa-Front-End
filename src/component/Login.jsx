@@ -10,11 +10,11 @@ const Login = () => {
             <form action="" method="post">
                 <div className={style.formrow}>
                     <label for="">Email</label>
-                    <input type="email" name="" id=""/>
+                    <input required type="email" name="" id=""/>
                 </div>
                 <div className={style.formrow}>
                     <label for="">Password</label>
-                    <input type="password" name="" id=""/>
+                    <input required type="password" name="" id=""/>
                 </div>
                 <div className={style.formrow}>
                     <button>Login</button>

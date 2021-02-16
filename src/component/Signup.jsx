@@ -11,19 +11,19 @@ const Signup = () => {
             <form action="" method="post">
                 <div className={style.formrow}>
                     <label for="">Company Name</label>
-                    <input type="text" name="" id=""/>
+                    <input type="text" required name="" id=""/>
                 </div>
                 <div className={style.formrow}>
                     <label for="">Email</label>
-                    <input type="email" name="" id=""/>
+                    <input type="email" required name="" id=""/>
                 </div>
                 <div className={style.formrow}>
                     <label for="">Password</label>
-                    <input type="password" name="" id=""/>
+                    <input type="password" required name="" id=""/>
                 </div>
                 <div className={style.formrow}>
                     <label for="">Confirm Password</label>
-                    <input type="password" name="" id=""/>
+                    <input type="password" required name="" id=""/>
                 </div>
                 <div className={style.formrow}>
                     <button>Sign Up</button>

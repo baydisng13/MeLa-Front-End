@@ -2,7 +2,7 @@ import React from "react";
 import main from "./css/main.module.css";
 import style from "./css/company.module.css";
 
-import HomeCard from "./HomeCard";
+import HomeCard from "./mini/HomeCard";
 
 const Company = (props) => {
   return (

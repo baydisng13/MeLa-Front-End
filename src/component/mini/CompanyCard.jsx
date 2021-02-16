@@ -1,5 +1,5 @@
 import React from "react";
-import style from "./css/homecard.module.css";
+import style from "../css/homecard.module.css";
 import { Link } from "react-router-dom";
 
 const CompanyCard = (props) => {

@@ -10,5 +10,55 @@
 .searchform{
     display: flex;
     flex-direction: row;
+    width: 100vw;
+    justify-content: center;
     
+    /* background-color: #748; */
+}
+
+.searchform input {
+    width: 250px;
+    height: 35px;
+    border: 1px solid #2B0565;
+    border-radius: 4px;
+    outline: none;
+    padding-left: 10px;
+    border-right: 0px solid #000;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.searchform button {
+    width: 40px;
+    height: 35px;
+    outline: none;
+    padding-left: 10px;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 4px;
+    border: 1px solid #2B0565;
+    border-left: 0px solid #000;
+    left: 10px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    color: #2B0565;
+}
+
+.tranding{
+    margin-top: 60px;
+    font-size: 24px;
+}
+.tranding a {
+    color: #2B0565;
+    text-decoration: none;
+    outline: none;
+}
+.treandingcon{
+    display: flex;
+    align-items: center;
+    padding: 0px 30px ;
+    margin-bottom: 20px;
+
+}
+.treandingcon i{
+    color: #2B0565;
+    margin-right: 10px;
 }
