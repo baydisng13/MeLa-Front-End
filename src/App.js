@@ -24,29 +24,12 @@ function App() {
           renders the first one that matches the current URL. */}
       <Switch>
 
-        <Route path="/Login">
-          <Login />
-        </Route>
-        
-        <Route path="/Signup">
-          <Signup />
-        </Route>
-
-        <Route path="/Home">
-          <Home />
-        </Route>
-
-        <Route path="/c/:id">
-          <Company />
-        </Route>
-        
-        <Route path="/Add">
-          <Add />
-        </Route>
-
-        <Route path="/Search">
-          <Search />
-        </Route>
+        <Route path="/Login" component={Login}/>
+        <Route path="/Signup" component={Signup}/>
+        <Route path="/Home" component={Home}/>
+        <Route path="/c/:id"  component={Company}/>
+        <Route path="/Add" component={Add}/>
+        <Route path="/Search" component={Search}/>
 
       </Switch>
 

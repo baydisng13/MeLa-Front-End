@@ -2,7 +2,7 @@ import React from "react";
 import main from "./css/main.module.css";
 import style from "./css/company.module.css";
 
-import HomeCard from "./mini/HomeCard";
+import FoodCard from "./mini/FoodCard";
 
 const Company = (props) => {
   return (
@@ -36,15 +36,23 @@ const Company = (props) => {
         </h4>
 
         <div className={style.hotel}>
-          <HomeCard
+          <FoodCard
             pic="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8Y2FmZXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
             name="Burger"
             location="99.99 etb"
+            tag3="Burger"
+            tag2="Fast_Food"
+            tag1="Discount"
+            tag4="Snack"
           />
-          <HomeCard
+          <FoodCard
             pic="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8Y2FmZXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
             name="Burger"
             location="99.99 etb"
+            tag4="Burger"
+            tag2="Fast_Food"
+            tag3="Discount"
+            tag1="Snack"
           />
         </div>
 
@@ -53,25 +61,41 @@ const Company = (props) => {
         </h4>
 
         <div className={style.hotel}>
-        <HomeCard
+        <FoodCard
             pic="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8Y2FmZXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
             name="Burger"
             location="99.99 etb"
+            tag1="Burger"
+            tag3="Fast_Food"
+            tag2="Discount"
+            tag4="Snack"
           />
-          <HomeCard
+          <FoodCard
             pic="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8Y2FmZXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
             name="Burger"
             location="99.99 etb"
+            tag1="Burger"
+            tag2="Fast_Food"
+            tag3="Discount"
+            tag4="Snack"
           />
-          <HomeCard
+          <FoodCard
             pic="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8Y2FmZXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
             name="Burger"
             location="99.99 etb"
+            tag2="Burger"
+            tag1="Fast_Food"
+            tag3="Discount"
+            tag4="Snack"
           />
-          <HomeCard
+          <FoodCard
             pic="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8Y2FmZXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
             name="Burger"
             location="99.99 etb"
+            tag1="Burger"
+            tag2="Fast_Food"
+            tag4="Discount"
+            tag3="Snack"  
           />
         </div>
       </div>

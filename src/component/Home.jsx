@@ -15,7 +15,7 @@ const Home = () => {
 
             <div className={style.hotel}>
 
-                <HomeCard name="Kaldis" location="6 kilo" />
+                <HomeCard name="Kaldis Cafe" location="6 kilo" />
                 <HomeCard name="Romina" location="4 kilo" />
                 <HomeCard name="Dink Dounat" location="Kebena" />
                 
