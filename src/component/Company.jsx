@@ -1,5 +1,4 @@
 import React from "react";
-import main from "./css/main.module.css";
 import style from "./css/company.module.css";
 
 import FoodCard from "./mini/FoodCard";
@@ -10,15 +9,19 @@ const Company = (props) => {
       <h1 className={style.mainheading}>Romina</h1>
 
       <div className={style.all}>
+       
         <div className={style.con}>
+       
           <h3>
             <i class="gg-info"></i> Description
           </h3>
+          
           <p>
             best café to spend time with your friends and family they have a
             good customer services and the place is so classic so u can even
             meet
           </p>
+        
         </div>
 
         <div className={style.con}>

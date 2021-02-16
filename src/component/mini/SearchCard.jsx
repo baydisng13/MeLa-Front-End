@@ -1,5 +1,5 @@
 import React from "react";
-import style from "../css/company.module.css";
+import style from "../css/SearchResult.module.css";
 import { Link } from "react-router-dom";
 
 const FoodCard = (props) => {
@@ -12,10 +12,8 @@ const FoodCard = (props) => {
         <h4 className={style.foodprice}>{props.price} </h4>
       </div>
       <div className={style.tag}>
-        <span>{props.tag1}</span>
-        <span>{props.tag2}</span>
-        <span>{props.tag3}</span>
-        <span>{props.tag4}</span>
+        <h4 className={style.companyname}>{props.companyname} </h4>
+        
       </div>
     </div>
   );

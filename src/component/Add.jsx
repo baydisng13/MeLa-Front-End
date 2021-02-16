@@ -13,7 +13,6 @@ const Add = () => {
         <div className={style.formrow}>
           <label for="">Category</label>
           <select placeholder="choose the type of fooo" type="text" name="" required id="">
-            <option value="" required>Choose The Type</option>
             <option value="">Breakfast</option>
             <option value="">Brunch</option>
             <option value="">Chicken</option>

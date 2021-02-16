@@ -17,12 +17,12 @@ const Search = () => {
 
       <div className={style.tranding}>
           
-        <Trending link="/t/discount" title="Discount" />
-        <Trending link="/t/<100" title="< 100 ETB" />
-        <Trending link="/t/100-200" title="100 - 200 ETB" />
-        <Trending link="/t/>100" title="> 200 Etb" />
+        <Trending link="/h/discount" title="Discount" />
+        <Trending link="/f/<100" title="< 100 ETB" />
+        <Trending link="/f/100-200" title="100 - 200 ETB" />
+        <Trending link="/f/>100" title="> 200 Etb" />
         <Trending link="/t/Burger" title="Burger" />
-        <Trending link="/t/Pizza" title="Pizza" />
+        <Trending link="/s/Pizza" title="Pizza" />
         <Trending link="/t/Breakfast" title="Breakfast" />
         <Trending link="/t/Lunch" title="Lunch" />
         <Trending link="/t/Dinner" title="Dinner" />

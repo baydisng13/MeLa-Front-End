@@ -1,43 +1,56 @@
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
-import Login from "./component/Login"
-import Signup from "./component/Signup"
-import Home from "./component/Home"
-import Add from "./component/Add"
-import Company from "./component/Company"
-import Search from "./component/Search"
-
-
-
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import Login from "./component/Login";
+import Signup from "./component/Signup";
+import Home from "./component/Home";
+import Add from "./component/Add";
+import Company from "./component/Company";
+import Search from "./component/Search";
+import SearchResult from "./component/SearchResult";
 
 function App() {
   return (
-  <Router>
-    <div className='app'>
-    
+    <Router>
+      
+      <div className="app">
+        
+        <Switch>
+       
+          {/* Login */}
+          <Route path="/Login" component={Login} />
+          
+          {/* Create Account */}
+          <Route path="/Signup" component={Signup} />
+          
+          {/* All Restaurants */}
+          <Route path="/Home" component={Home} />
+          
+          {/* Single Restaurant */}
+          <Route path="/c/:id" component={Company} />
+          
+          {/* Add Restaurant */}
+          <Route path="/Add" component={Add} />
+          
+          {/* Discover */}
+          <Route path="/Search" component={Search} />
+          
+          {/* Search Result By Food Name */}
+          <Route path="/s/:keyword" component={SearchResult} />
+          
+          {/* Search Result By Food Type */}
+          <Route path="/t/:keyword" component={SearchResult} />
 
-      {/* A <Switch> looks through its children <Route>s and
-          renders the first one that matches the current URL. */}
-      <Switch>
+          {/* Search Result By Food Hashtag */}
+          <Route path="/h/:keyword" component={SearchResult} />
+       
 
-        <Route path="/Login" component={Login}/>
-        <Route path="/Signup" component={Signup}/>
-        <Route path="/Home" component={Home}/>
-        <Route path="/c/:id"  component={Company}/>
-        <Route path="/Add" component={Add}/>
-        <Route path="/Search" component={Search}/>
+          {/* Filter Result By Food Price */}
+          <Route path="/f/:keyword" component={SearchResult} />
+       
+        </Switch>
 
-      </Switch>
+      </div>
 
-
-
-    </div>
-  </Router>
-    
+    </Router>
   );
 }
 
