@@ -53,7 +53,7 @@ form{
     font: normal normal normal 17px/22px Microsoft PhagsPa;
 }
 
-a{
+.donthave{
     position: absolute;
     bottom: 30px;
     width: 100%;

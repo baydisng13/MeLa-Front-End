@@ -30,7 +30,7 @@ const Signup = () => {
                 </div>
             </form>
 
-            <Link to="/login">I Have Account</Link>
+            <Link className={style.donthave} to="/login">I Have Account</Link>
 
         </div>
     )

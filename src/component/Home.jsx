@@ -27,7 +27,7 @@ const Home = () => {
             <nav className={style.nav}>
             
                 <Link to='/home'><i className="gg-home"></i></Link>
-                <Link to="/login"><i className="gg-add"></i></Link>
+                <Link to="/add"><i className="gg-add"></i></Link>
                 <Link to="/search"><i className="gg-search"></i></Link>
             
             </nav>

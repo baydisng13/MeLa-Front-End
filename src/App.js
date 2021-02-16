@@ -7,6 +7,9 @@ import {
 import Login from "./component/Login"
 import Signup from "./component/Signup"
 import Home from "./component/Home"
+import Add from "./component/Add"
+import Company from "./component/Company"
+import Search from "./component/Search"
 
 
 
@@ -31,6 +34,18 @@ function App() {
 
         <Route path="/Home">
           <Home />
+        </Route>
+
+        <Route path="/c/:id">
+          <Company />
+        </Route>
+        
+        <Route path="/Add">
+          <Add />
+        </Route>
+
+        <Route path="/Search">
+          <Search />
         </Route>
 
       </Switch>

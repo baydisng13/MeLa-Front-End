@@ -21,7 +21,7 @@ const Login = () => {
                 </div>
             </form>
 
-            <Link to="/signup">I Don't Have Account</Link>
+            <Link className={style.donthave} to="/signup">I Don't Have Account</Link>
 
         </div>
     )

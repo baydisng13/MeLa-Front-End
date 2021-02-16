@@ -1,0 +1,14 @@
+.mainheading{
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 10%;
+    text-align: left;
+    font: normal normal bold 50px/71px Microsoft PhagsPa;
+    color: #2B0565;
+}
+.searchform{
+    display: flex;
+    flex-direction: row;
+    
+}
