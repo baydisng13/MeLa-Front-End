@@ -53,3 +53,16 @@ form{
     width: 100%;
     text-align: center;
 }
+
+
+
+/* *************************************** */
+/* this is for the log in and log out icon */
+/* *************************************** */
+
+.log{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    color: #2B0565;
+}

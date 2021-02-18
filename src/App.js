@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Redirect, Route, Link } from "react-router-dom";
 import Login from "./component/Login";
 import Signup from "./component/Signup";
 import Home from "./component/Home";
@@ -46,6 +46,8 @@ function App() {
           {/* Filter Result By Food Price */}
           <Route path="/f/:keyword" component={SearchResult} />
        
+          <Redirect from="/" to="/home" />
+
         </Switch>
 
       </div>

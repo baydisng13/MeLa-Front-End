@@ -3,7 +3,20 @@ import style from "./css/company.module.css";
 
 import FoodCard from "./mini/FoodCard";
 
+
+import {
+  
+  useRouteMatch,
+
+} from "react-router-dom";
+
+
+
 const Company = (props) => {
+
+  let match = useRouteMatch().params.id;
+  console.log(match)
+
   return (
     <div>
       <h1 className={style.mainheading}>Romina</h1>
