@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import style from './css/login.module.css'
-import {Link} from "react-router-dom";  
+import {Link} from "react-router-dom"; 
+import axios from 'axios' 
 
 
 const Login = () => {
@@ -11,6 +12,9 @@ const Login = () => {
         if (event) {
         event.preventDefault();
         console.log(login)
+        axios.post(`http://localhost:8080/company`, Login )
+        .then(res =>console.log(res))
+        .catch(err => console.log(err))
         }
     }
 
@@ -33,8 +37,8 @@ const Login = () => {
 
             <form onSubmit={handleSubmit}>
                 <div className={style.formrow}>
-                    <label for="">Email</label>
-                    <input onChange={handleInputChange} value={login.email} required type="email" name="email" id=""/>
+                    <label for="">Name</label>
+                    <input onChange={handleInputChange} value={login.name} required type="Text" name="name" id=""/>
                 </div>
                 <div className={style.formrow}>
                     <label for="">Password</label>

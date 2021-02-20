@@ -5,19 +5,27 @@ import SearchCard from "./mini/SearchCard";
 import load from "./Icon/loading1.gif";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import queryString from 'query-string';
 
-
-const SearchResult = (props) => {
-  let key = useRouteMatch().url;
+const SearchResult = (props , location) => {
+   
+    let key =props.location.search;
+    const subheading = key.replace(
+        /([0-9]|upto)/gm,
+        '$1');
+    console.log(subheading);
   let keyword = useRouteMatch().params.keyword;
     
-  console.log()
+  console.log(useRouteMatch())
   const [data, setdata] = useState();
 
   useEffect(() => {
     async function getdata() {
         const res = await axios
-        .get("http://localhost:8080/food/" + key)
+        .get("http://localhost:8080/food/range"  ,  
+            {
+                params:queryString.parse(props.location.search, {parseNumbers: true})
+        })
         .then((res) => setdata(res.data))
         .catch((err) => console.log(err));
     }
@@ -39,17 +47,18 @@ const SearchResult = (props) => {
     <div>
         <h1 className={style.mainheading}>Oops</h1>
         <div className={style.hotel}>
-          <Link to="/"> <h4 > No Result For {keyword}. Back to Home</h4></Link>
+          <Link to="/"> <h4 > No Result in this range . Back to Home</h4></Link>
         </div>
       </div>
     )
   } else {
-      console.log(data.foods);
+    //   console.log(data.foods);
       const li = data.foods
-
+      
     return (
       <div>
-        <h1 className={style.mainheading}>{keyword}</h1>
+        <h1 className={style.mainheading}>Range</h1>
+        <h1 className={style.subheading}> 0 - 100</h1>
 
         <div className={style.hotel}>
 

@@ -30,16 +30,16 @@ const Search = ( props ) => {
 
       <div className={style.tranding}>
           
-        <Trending link="/tag/discount" title="Discount" />
-        <Trending link="/range/?from=1&upto=100" title="< 100 ETB" />
-        <Trending link="/range/?from=100&upto=200" title="100 - 200 ETB" />
-        <Trending link="/range/?from=200&upto=1000" title="> 200 Etb" />
-        <Trending link="/tag/burger" title="Burger" />
-        <Trending link="/tag/Pizza" title="Pizza" />
-        <Trending link="/tag/Breakfast" title="Breakfast" />
-        <Trending link="/tag/Lunch" title="Lunch" />
-        <Trending link="/tag/Dinner" title="Dinner" />
-        <Trending link="/tag/Snack" title="Snack" />
+        <Trending search="" link="/tag/discount" title="Discount" />
+        <Trending search="?from=1&upto=100" link="/range/" title="< 100 ETB" />
+        <Trending search="?from=100&upto=200" link="/range/" title="100 - 200 ETB" />
+        <Trending search="?from=200&upto=2000" link="/range/" title="> 200 Etb" />
+        <Trending search="" link="/tag/burger" title="Burger" />
+        <Trending search="" link="/tag/Pizza" title="Pizza" />
+        <Trending search="" link="/tag/Breakfast" title="Breakfast" />
+        <Trending search="" link="/tag/Lunch" title="Lunch" />
+        <Trending search="" link="/tag/Dinner" title="Dinner" />
+        <Trending search="" link="/tag/Snack" title="Snack" />
 
 
       </div>

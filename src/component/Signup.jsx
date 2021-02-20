@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import style from './css/signup.module.css'
 import {Link} from "react-router-dom";
+import axios from 'axios' 
 
 const Signup = () => {
 
@@ -10,6 +11,10 @@ const Signup = () => {
         if (event) {
         event.preventDefault();
         console.log(signup)
+        axios.post(`http://localhost:8080/company`, signup )
+        .then(res =>console.log(res))
+        .catch(err => console.log(err))
+        
         }
     }
 
@@ -37,8 +42,18 @@ const Signup = () => {
                     <input onChange={handleInputChange} value={signup.name} type="text" required name="name" id=""/>
                 </div>
                 <div className={style.formrow}>
-                    <label for="">Email</label>
-                    <input onChange={handleInputChange} value={signup.email} type="email" required name="email" id=""/>
+                    <label for="">Location</label>
+                    <input onChange={handleInputChange} value={signup.location} type="text" required name="location" id=""/>
+                </div>
+                <div className={style.formrow}>
+                    <label for="">Category</label>
+                    <select defaultValue="restaurant" onChange={handleInputChange} value={signup.category} type="text" required name="location" id="">
+                        <option value="cafe">Cafe</option>
+                        <option value="restaurant">Restaurant</option>
+                        <option value="bar">Bar</option>
+                        <option value="cafe & restaurant">Cafe & Restaurant</option>
+                        <option value="bar & restaurant">Bar & Restaurant</option>
+                    </select>
                 </div>
                 <div className={style.formrow}>
                     <label for="">Password</label>

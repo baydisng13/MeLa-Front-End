@@ -24,7 +24,14 @@
     color: #2B0565;
     text-transform: capitalize;
 }
-
+.subheading{
+    margin-bottom: 30px;
+    margin-left: 10%;
+    text-align: left;
+    font: normal normal bold 26px Microsoft PhagsPa;
+    color: #2B0565;
+    text-transform: capitalize;
+}
 
 .all{
     padding: 20px;
@@ -111,4 +118,7 @@
     font-size: 16px;
 }
 
+.subheading{
+
+}
 

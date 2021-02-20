@@ -6,7 +6,12 @@ const Trending = (props) => {
     return (
         <div className={style.treandingcon}>
           <i class="gg-awards"></i> 
-          <Link to={props.link}> {props.title} </Link>
+          <Link to={{
+    pathname: props.link,
+    search: props.search,
+    
+  }}> {props.title} </Link>
+          {/* <Link to={props.link}> {props.title} </Link> */}
         </div>
     )
 }

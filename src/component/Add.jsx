@@ -53,6 +53,7 @@ const Add = () => {
     console.log(name)
     console.log(price)
     console.log(tag)
+
     console.log(img)
         axios.post(`https://httpbin.org/anything`, data )
         .then(res =>console.log(res))
@@ -69,11 +70,10 @@ const Add = () => {
       >
         <div className={style.formrow}>
           <label for="">Category</label>
-          <select  onChange={ event =>{
+          <select defaultValue="Breakfast"  onChange={ event =>{
             const { value } = event.target
             settype(value)
           }} type="text" name="type"  required id="">
-            <option value="Choose">Choose</option>
             <option value="Breakfast">Breakfast</option>
             
             <option value="Brunch">Brunch</option>
@@ -108,7 +108,7 @@ const Add = () => {
           <label for="">Tag</label>
           <input type="Text" onChange={ event =>{
             const { value } = event.target;
-            settag(value)
+            settag(value.split(' '))
           }} required className={style.inputapp} name="tag" />
           {/* <input type="text" value="" data-role="tagsinput" maxlength="5"></input>  */}
         </div>

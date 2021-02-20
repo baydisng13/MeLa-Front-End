@@ -44,7 +44,7 @@ function App() {
           <Route path="/tag/:keyword" component={SearchResult} />
        
           {/* Filter Result By Food Price */}
-          <Route path="/range/:keyword" component={Range} />
+          <Route path="/range" component={Range} />
        
           <Redirect from="/" exact to="/home" />
 
