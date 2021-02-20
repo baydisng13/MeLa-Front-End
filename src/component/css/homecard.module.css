@@ -27,9 +27,11 @@
 }
 .hotelcard h3{
     margin:20px;
+    text-transform: capitalize;
 }
 .hotelcard h4{
     margin:24px;
+    text-transform: capitalize;
 }
 
 .hotelcard .tag{

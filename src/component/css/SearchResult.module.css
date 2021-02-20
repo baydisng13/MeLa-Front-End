@@ -22,6 +22,7 @@
     text-align: left;
     font: normal normal bold 50px/71px Microsoft PhagsPa;
     color: #2B0565;
+    text-transform: capitalize;
 }
 
 
@@ -76,8 +77,9 @@
 }
 .hotelcard h3{
     margin:20px;
+    text-transform: capitalize;
 }
-.hotelcard h4{
+.hotelcard .body h4{
     margin:24px;
 }
 
@@ -85,11 +87,25 @@
     width: 100%;
     margin-bottom: 10px;
     display: flex;
+    
     flex-direction: row;
     color: #2b0565;
     font-size: 12px;
     padding-left: 15px;
 }
+.hotelcard .subinfo{
+    width: 100%;
+    display: flex;
+    margin-bottom: 10px;
+    flex-direction: row;
+    color: #2b0565;
+    padding: 0 20px;
+    justify-content: space-between;
+    text-transform: capitalize;
+}
+/* .hotelcard .subinfo h5{
+    margin: 10px;
+} */
 .hotelcard .tag h4{
     margin: 2px 10px;
     font-size: 16px;

@@ -10,12 +10,13 @@ import { Link } from "react-router-dom";
 const SearchResult = (props) => {
   let key = useRouteMatch().url;
   let keyword = useRouteMatch().params.keyword;
-
+    
+  console.log()
   const [data, setdata] = useState();
 
   useEffect(() => {
     async function getdata() {
-      const res = await axios
+        const res = await axios
         .get("http://localhost:8080/food/" + key)
         .then((res) => setdata(res.data))
         .catch((err) => console.log(err));

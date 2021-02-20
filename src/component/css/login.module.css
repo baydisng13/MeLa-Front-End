@@ -6,6 +6,8 @@
     text-align: left;
     font: normal normal bold 50px/71px Microsoft PhagsPa;
     color: #2B0565;
+    text-transform: capitalize;
+
 }
 form{
     margin-top: 50px;

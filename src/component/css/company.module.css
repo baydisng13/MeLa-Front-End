@@ -22,6 +22,7 @@
     text-align: left;
     font: normal normal bold 50px/71px Microsoft PhagsPa;
     color: #2B0565;
+    text-transform: capitalize;
 }
 
 
@@ -101,11 +102,13 @@
     flex-direction: row;
     justify-content: space-between;
 }
-.hotelcard h3{
+.hotelcard .body h3{
     margin:20px;
+    text-transform: capitalize;
 }
 .hotelcard h4{
     margin:24px;
+    text-transform: capitalize;
 }
 
 .hotelcard .tag{

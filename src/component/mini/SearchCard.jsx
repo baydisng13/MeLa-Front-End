@@ -8,11 +8,12 @@ const FoodCard = (props) => {
       <img
         src={props.pic}/>
       <div className={style.body}>
-        <h3 className={style.foodname    }>{props.name}     </h3>
+        <h3 className={style.foodname}>{props.name}     </h3>
         <h4 className={style.foodprice}>{props.price} </h4>
       </div>
-      <div className={style.tag}>
+      <div className={style.subinfo}>
         <h4 className={style.companyname}>{props.companyname} </h4>
+        <h5 className={style.companyname}>{props.companylocation} </h5>
         
       </div>
     </div>

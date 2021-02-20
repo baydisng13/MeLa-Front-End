@@ -6,6 +6,7 @@ import Add from "./component/Add";
 import Company from "./component/Company";
 import Search from "./component/Search";
 import SearchResult from "./component/SearchResult";
+import Range from "./component/Range";
 
 function App() {
   return (
@@ -34,19 +35,18 @@ function App() {
           <Route path="/Search" component={Search} />
           
           {/* Search Result By Food Name */}
-          <Route path="/s/:keyword" component={SearchResult} />
+          <Route path="/name/:keyword" component={SearchResult} />
           
           {/* Search Result By Food Type */}
-          <Route path="/t/:keyword" component={SearchResult} />
+          <Route path="/catagory/:keyword" component={SearchResult} />
 
           {/* Search Result By Food Hashtag */}
-          <Route path="/h/:keyword" component={SearchResult} />
+          <Route path="/tag/:keyword" component={SearchResult} />
        
-
           {/* Filter Result By Food Price */}
-          <Route path="/f/:keyword" component={SearchResult} />
+          <Route path="/range/:keyword" component={Range} />
        
-          <Redirect from="/" to="/home" />
+          <Redirect from="/" exact to="/home" />
 
         </Switch>
 
